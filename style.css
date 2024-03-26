@@ -1,0 +1,538 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    
+}
+
+body{
+    background-color: ghostwhite;
+}
+
+header{
+    padding: 28px 8%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    background-color: ghostwhite;
+}
+
+.itens_header a{
+    text-decoration: none;
+    color: black;
+
+}
+.itens_header a:hover{
+    color: black;
+}
+
+
+
+.itens_header{
+    list-style: none;
+    display: flex;
+    gap: 35px;
+    text-decoration: none;
+    color: black;
+    width: 40%;
+    position: absolute;
+    
+}
+
+header i{
+    color: #732b70;
+}
+header li button{
+    background: transparent;
+    border: none;
+}
+.item.active{
+    border-bottom: 3px solid #984e94;
+}
+
+.mobile_btn{
+    display: none;
+    position: relative;
+}
+.itens_header_mobile{
+    display: none;
+    position: relative;
+}
+
+@media screen and (max-width: 1100px) {
+    
+    
+    header{
+        display: none;
+    }
+
+
+    .banner{
+        display: none;
+    }
+    .shape{
+        display: none;
+    }
+    
+    
+}
+
+@media screen and (max-width: 500px){
+    
+    *{
+        padding: 0;
+    }
+    .container_about{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        position: relative;
+        right: 100%;
+        top: 10em;
+        color: ghostwhite;
+    }
+    .logos{
+        position: relative;
+        right: 50%;
+        flex-direction: column;
+        gap: 0;
+        padding: 0;
+    }
+    .sobre{
+        padding: 0;
+    }
+
+    .about{
+        height: 2000px;
+        padding: 0;
+    }
+}
+
+.home{
+    display: flex;
+    padding: 28px 8%;
+    position: relative;
+    top: 5em;
+    height: 23.5em;
+    
+    
+}
+
+.img_banner{
+    z-index: 2;
+    position: absolute;
+    left: 48em;
+    top: -3em;
+    width: 33%;
+
+}
+
+
+.infors h2{
+    font-size: 2.5rem;
+    margin-top: 9rem;
+}
+
+.infors span{
+    color: #732b70;
+}
+
+.icons{
+    font-size: 20px;
+    gap: 12px;
+    display: flex;
+    margin-top: 10px;
+}
+
+.icon{
+    display: flex;
+    align-items: center;
+    width: 45px;
+    height: 40px;
+    font-size: 1.25rem;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #732b70;
+    background-color: #fff;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    transition: border 3s ease-in;
+   
+}
+
+.icon:hover{
+    border: 2px solid #732b70;
+}
+
+.shape{
+    background-color: #732b70;
+    width: 26em;
+    height: 26em;
+    position: absolute;
+    right: 10em;
+    border-radius: 50%;
+    z-index: 0;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+}
+
+.ir-baixo{
+    text-decoration: none; 
+    align-items: center;
+    text-align: center;
+    left: 45%;
+    position: absolute;
+    top: 28em;
+    transition: 0.5s;
+    
+}
+
+.ir-baixo:hover{
+    border-bottom: 1px solid #984e94;
+    
+   
+    
+}
+
+.about{
+    position: relative;
+    top: 15em;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 28px 8%;
+    height: 35em;
+    width: 100%;
+    background-color: #732b70;
+    z-index: 1;
+}
+
+.about h1{
+    
+    position: relative;
+    font-size: 30px;
+    color: gainsboro;
+    top: 30px;
+}
+.container_about
+{
+    display: flex;
+    gap: 15em;
+    align-items: center;
+    justify-content: center;
+    left: 13.5em;
+    position: absolute;
+    top: 10em;
+    color: ghostwhite;
+
+}
+
+.sobre{
+    width: 20em;
+    height: 20em;
+    background-color: #732b70;
+    border-radius: 30px;
+    padding: 35px;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.2);
+    
+
+
+}
+
+.experiencia{
+    width: 20em;
+    height: 20em;
+    background-color: #732b70;
+    border-radius: 30px;
+    padding: 35px;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.2);
+   
+
+}
+
+
+.hidden{
+    opacity: 0;
+    filter: blur(15px);
+    transition: all 1s;
+    transform: translateX(-100%);
+}
+.show{
+    opacity: 1;
+    filter: blur(0px);
+    transition: all 1s;
+    transform: translateX(0);
+}
+
+
+.logos :nth-child(2) {
+    transition-delay: 400ms;
+}
+
+.logos :nth-child(3) {
+    transition-delay: 700ms;
+}
+
+.logos :nth-child(4) {
+    transition-delay: 1000ms;
+}
+
+.logos{
+    display: flex;
+    gap: 15em;
+}
+
+
+.habilidades{
+    position: relative;
+    top: 20em;
+    height: 30em;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hab{
+    display: flex;
+    margin: 10px;
+    padding: 28px 8%;
+
+
+}
+
+.habs{
+    justify-content: center;
+    width: 300px;
+    height: 200px;
+    position: relative;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 35px 30px rgba(0, 0, 0, 0.15);
+    margin: 5px;
+    top: 3em;
+
+
+}
+
+.habs i, .habs h2, .habs p{
+    position: relative;
+    top: 1em;
+}
+
+.habilidades h1{
+    font-size: 30px;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: 250px;
+    position: relative;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 35px 30px rgba(0, 0, 0, 0.15);
+    transition: 0.5s;
+    margin: 5px;
+    padding: 28px 8%;
+    color: black;
+
+}
+
+.card:hover{
+    height: 390px;
+}
+
+.card .img-box{
+    position: absolute;
+    width: 200px;
+    height: auto;
+    top: 0;
+    transition: 0.5s;
+
+}
+
+.card:hover .img-box{
+    top: -100px;
+    scale: 0.75;
+}
+
+.card .img-box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card .contant{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    position: absolute;
+    top: 200px;
+    width: 100%;
+    padding: 0px 30px;
+    text-align: center;
+    height: 30px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.card:hover .contant{
+    top: 90px;
+    height: 350px;
+}
+
+.card .read-more{
+    background: linear-gradient(90deg, #732b70, #984e94);
+    padding: 12px;
+    color: white;
+    border-radius: 20px;
+    border: transparent;
+    transition: 0.4s;
+}
+
+.read-more:hover{
+    padding: 13px;
+    background: linear-gradient(90deg, #984e94, #732b70);
+}
+
+.card_maior{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    top: 8em;
+    position: relative;
+}
+
+.portfolio{
+    position: relative;
+    top: 20em;
+    height: 37em;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: #732b70;
+    color: gainsboro;
+}
+
+.portfolio h1{
+    font-size: 30px;
+    top: 2em;
+    position: relative;
+}
+
+
+
+
+
+
+footer{
+    position: relative;
+    top: 20em;
+    height: 15em;
+
+}
+.footer_icon{
+    position: relative;
+    top: 5.5em;
+    padding: 28px 8%;
+}
+
+.mais_projetos{
+    position: relative;
+    top: 14em;
+    background: ghostwhite;
+    padding: 12px;
+    color:black;
+    border-radius: 15px;
+    border: transparent;
+    transition: 0.4s;
+    text-decoration: none;
+
+}
+
+.mais_projetos a{
+    text-decoration: none;
+    color: gainsboro;
+}
+
+.mais_projetos:hover{
+    padding: 13px;
+    background: #cf9acd;
+}
+
+footer p{
+    position: relative;
+    padding: 28px 8%;
+    top: 7em;
+    font-size: 14px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.formDeEnvio{
+    display: block;
+    position: relative;
+    top: 3em;
+    background-color: white;
+    width: 20em;
+    height: 20em;
+    border-radius: 20px;
+    box-shadow: 0px 35px 30px rgba(0, 0, 0, 0.15);
+    left: 24.5em;
+    
+}
+
+.formDeEnvio input, label{
+    gap: 3em;
+    margin-bottom: 1em;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    top: 3em;
+    width: 17em;
+    height: 2.5em;
+    border-radius: 15px;
+    
+}
+.formDeEnvio .principal{
+    border: solid 1px #732b70;
+    background: transparent;
+    outline: none;
+    color: #732b70;
+}
+
+.submit{
+    background: linear-gradient(90deg, #732b70, #984e94);
+    color: white;
+    border-radius: 20px;
+    border: transparent;
+    transition: 0.4s;
+}
+
+.submit:hover{
+    background: linear-gradient(90deg, #984e94, #732b70);
+}
+
+.hidden{
+    opacity: 0;
+    filter: blur(15px);
+    transition: all 1s;
+    transform: translateX(-100%);
+}
+.show{
+    opacity: 1;
+    filter: blur(0px);
+    transition: all 1s;
+    transform: translateX(0);
+}

@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    
+}
+
+body{
+    background-color: ghostwhite;
+}
+
+header{
+    padding: 28px 8%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    background-color: ghostwhite;
+}
+
+.itens_header a{
+    text-decoration: none;
+    color: black;
+
+}
+.itens_header a:hover{
+    color: black;
+}
+
+
+
+.itens_header{
+    list-style: none;
+    display: flex;
+    gap: 35px;
+    text-decoration: none;
+    color: black;
+    width: 40%;
+    position: absolute;
+    
+}
+
+header i{
+    color: #732b70;
+}
+.item.active{
+    border-bottom: 3px solid #984e94;
+}
+
+.mobile_btn{
+    display: none;
+    position: relative;
+}
+.itens_header_mobile{
+    display: none;
+}
+
+section{
+    position: relative;
+    top: 5em;
+    padding: 28px 8%;
+    align-items: center;
+    text-align: center;
+}
+.card{
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: 250px;
+    position: relative;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 35px 30px rgba(0, 0, 0, 0.15);
+    transition: 0.5s;
+    margin: 5px;
+    padding: 28px 8%;
+    color: black;
+    margin: 15px;
+
+}
+
+.card:hover{
+    height: 390px;
+}
+
+.card .img-box{
+    position: absolute;
+    width: 200px;
+    height: auto;
+    top: 0;
+    transition: 0.5s;
+
+}
+
+.card:hover .img-box{
+    top: -100px;
+    scale: 0.75;
+}
+
+.card .img-box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card .contant{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    position: absolute;
+    top: 200px;
+    width: 100%;
+    padding: 0px 30px;
+    text-align: center;
+    height: 30px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.card:hover .contant{
+    top: 90px;
+    height: 350px;
+}
+
+.card .read-more{
+    background: linear-gradient(90deg, #732b70, #984e94);
+    padding: 12px;
+    color: white;
+    border-radius: 20px;
+    border: transparent;
+    transition: 0.4s;
+}
+
+.read-more:hover{
+    padding: 13px;
+    background: linear-gradient(90deg, #984e94, #732b70);
+}
+
+.card_maior{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    top: 3em;
+    position: relative;
+}
+
+.formDeEnvio{
+    display: block;
+    position: relative;
+    top: 3em;
+    background-color: white;
+    width: 20em;
+    height: 20em;
+    border-radius: 20px;
+    box-shadow: 0px 35px 30px rgba(0, 0, 0, 0.15);
+    left: 24.5em;
+    
+}
+
+.formDeEnvio input, label{
+    gap: 3em;
+    margin-bottom: 1em;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    top: 3em;
+    width: 17em;
+    height: 2.5em;
+    border-radius: 15px;
+    
+}
+.formDeEnvio .principal{
+    border: solid 1px #732b70;
+    background: transparent;
+    outline: none;
+    color: #732b70;
+}
+
+.submit{
+    background: linear-gradient(90deg, #732b70, #984e94);
+    color: white;
+    border-radius: 20px;
+    border: transparent;
+    transition: 0.4s;
+}
+
+.submit:hover{
+    background: linear-gradient(90deg, #984e94, #732b70);
+}
+
+.hidden{
+    opacity: 0;
+    filter: blur(15px);
+    transition: all 1s;
+    transform: translateX(-100%);
+}
+.show{
+    opacity: 1;
+    filter: blur(0px);
+    transition: all 1s;
+    transform: translateX(0);
+}
