@@ -64,55 +64,284 @@ header li button{
     display: none;
     position: relative;
 }
-
-@media screen and (max-width: 1100px) {
-    
-    
-    header{
+/* Adicione este código ao final do seu arquivo CSS */
+@media screen and (max-width: 768px) {
+    /* Remover o menu */
+    header {
         display: none;
     }
 
+    /* Estilo para a seção home */
+    .home {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* Faz a seção ocupar 100% da altura da tela */
+        position: relative;
+        top: 5em;
+        height: 23.5em;
+    }
 
-    .banner{
+    .shape {
         display: none;
+    }
+
+    .infors {
+        text-align: center;
+    }
+
+    .infors h2 {
+        font-size: 2.5rem;
+        margin-top: 1rem; /* Reduzir a margem superior */
+    }
+
+    .infors span {
+        color: #732b70;
+    }
+
+    .icons {
+        display: flex;
+        gap: 12px;
+        margin-top: 10px;
+        justify-content: center;
+    }
+
+    .icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1.5rem;
+        border-radius: 50%;
+        text-decoration: none;
+        color: #732b70;
+        background-color: #fff;
+        box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: border 0.3s ease-in;
+    }
+
+    .icon:hover {
+        border: 2px solid #732b70;
+    }
+
+    /* Estilo para outras seções */
+    .about,
+    .habilidades,
+    .portfolio,
+    footer {
+        padding: 50px;
+        text-align: center;
+    }
+
+    .about {
+        height: 20em;
+        width: 100%;
+        background-color: #732b70;
+    }
+
+    .about h1,
+    .habilidades h1,
+    .portfolio h1 {
+        font-size: 2.5rem;
+    }
+
+    /* Remover flex-wrap e adicionar flex-direction */
+    .container_about,
+    .logos {
+        display: flex;
+        position: relative;
+        right: 4.5em;
+        gap: 5px;
+        flex-direction: column; /* Alteração para column */
+    }
+
+    /* Estilo para as habilidades */
+    .habilidades .hab {
+        display: flex;
+        flex-direction: column; /* Alteração para column */
+        align-items: center;
+        gap: 0px;
+    }
+
+    .hab p {
+        margin-top: 0;
+    }
+
+    /* Remover a largura máxima para as habilidades */
+    .habilidades .habs {
+        width: 100%; /* Alteração para ocupar a largura total */
+        max-width: none; /* Remover a largura máxima */
+    }
+
+    /* Estilo para as sessões com fundo #732b70 */
+    .about,
+    .portfolio,
+    footer {
+        position: relative;
+    }
+
+    .about::before,
+    .portfolio::before,
+    footer::before {
+        content: "";
+        position: absolute;
+        top: 0em;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #732b70;
+        z-index: -1;
+    }
+
+    .portfolio::before {
+        top: 17em;
+    }
+
+    .portfolio {
+        margin-top: 80em;
+    }
+
+    .about::before {
+        top: 35em;
+    }
+
+    .habilidades {
+        z-index: 2;
+        position: relative;
+        margin-top: 30em;
+        height: 70em;
+    }
+
+    footer {
+        position: relative;
+        top: 10em;
+        margin-top: 10em;
+    }
+
+    footer::before {
+        background-color: ghostwhite;
+    }
+
+    /* Ajuste dos elementos internos */
+    .about > *,
+    .portfolio > *,
+    footer > * {
+        position: relative;
+        z-index: 1;
+    }
+
+    .sobre,
+    .experiencia,
+    .habs {
+        width: 100%;
+        max-width: 400px;
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .card_maior {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .card {
+        flex: 0 1 300px;
+    }
+
+    .card .img-box img {
+        width: 100%;
+    }
+
+    .read-more {
+        background: linear-gradient(90deg, #732b70, #984e94);
+        padding: 12px 20px;
+        color: white;
+        border-radius: 20px;
+        border: transparent;
+        transition: 0.4s;
+    }
+
+    .read-more:hover {
+        padding: 13px 22px;
+        background: linear-gradient(90deg, #984e94, #732b70);
+    }
+
+    .mais_projetos {
+        background: linear-gradient(90deg, #732b70, #984e94);
+        padding: 12px 20px;
+        color: white;
+        border-radius: 15px;
+        border: transparent;
+        transition: 0.4s;
+    }
+
+    .mais_projetos:hover {
+        padding: 13px 22px;
+        background: linear-gradient(90deg, #984e94, #732b70);
+    }
+
+    footer p {
+        font-size: 1rem;
+    }
+
+    .formDeEnvio {
+        display: block;
+        max-width: 400px;
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.2);
+        margin: 0 auto; /* Centralizar o formulário */
+        margin-top: 20px;
+    }
+
+    .formDeEnvio input,
+    label {
+        margin-bottom: 1em;
+        width: 100%;
+    }
+
+    .principal {
+        border: solid 1px #732b70;
+        background: transparent;
+        outline: none;
+        color: #732b70;
+    }
+
+    .submit {
+        background: linear-gradient(90deg, #732b70, #984e94);
+        color: white;
+        padding: 12px 20px;
+        border-radius: 20px;
+        border: transparent;
+        transition: 0.4s;
+    }
+
+    .submit:hover {
+        padding: 13px 22px;
+        background: linear-gradient(90deg, #984e94, #732b70);
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    header {
+        padding: 20px;
+    }
+
+    .home {
+        padding: 20px;
     }
     .shape{
         display: none;
     }
-    
-    
+
+    header{
+        display: none;
+    }
 }
 
-@media screen and (max-width: 500px){
-    
-    *{
-        padding: 0;
-    }
-    .container_about{
-        display: flex;
-        flex-direction: column;
-        gap: 0;
-        position: relative;
-        right: 100%;
-        top: 10em;
-        color: ghostwhite;
-    }
-    .logos{
-        position: relative;
-        right: 50%;
-        flex-direction: column;
-        gap: 0;
-        padding: 0;
-    }
-    .sobre{
-        padding: 0;
-    }
-
-    .about{
-        height: 2000px;
-        padding: 0;
-    }
-}
 
 .home{
     display: flex;
@@ -535,4 +764,9 @@ a{
     filter: blur(0px);
     transition: all 1s;
     transform: translateX(0);
+}
+
+.habs p{
+    margin-top: 1em;
+    padding-top: 1em;
 }

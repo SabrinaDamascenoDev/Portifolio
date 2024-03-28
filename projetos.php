@@ -60,7 +60,7 @@
                     <i class="fa-brands fa-css3-alt"></i>
                     <i class="fa-brands fa-html5"></i>
                 </div>
-                <button class="read-more"><a href="<?= $projeto['link']?>">Acessar</a></button>
+                <a href="<?= $projeto['link']?>"><button class="read-more">Acessar</button></a>
             </div>
         </div>
         <?php endforeach; ?>

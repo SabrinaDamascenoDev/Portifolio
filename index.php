@@ -38,7 +38,7 @@
                 <li><a href="" class="item active">Home</a></li>
                 <li><a href="#about">Sobre mim</a></li>
                 <li><a href="#habilidades" class="item">Habilidades</a></li>
-                <li><a href="" class="item">Portfólio</a></li>
+                <li><a href="#portfolio" class="item">Portfólio</a></li>
             </ul>
 
         </nav>
@@ -65,8 +65,8 @@
             <p>Desenvolvedora <span>Full-stack</span></p>
 
             <div class="icons">
-                <a href="" class="icon"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="" class="icon"><i class="fa-brands fa-github"></i></a>
+                <a href="www.linkedin.com/in/sabrina-damasceno-4a81a0265" class="icon"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/SabrinaDamascenoDev" class="icon"><i class="fa-brands fa-github"></i></a>
             </div>
         </div>
         <div class="banner">
@@ -74,7 +74,7 @@
         </div>
         <div class="shape"></div>
 
-        <a href="#sobre-mim" class="ir-baixo">Veja mais <i class="fa-solid fa-arrow-down"></i></a>
+        <a href="#about" class="ir-baixo">Veja mais <i class="fa-solid fa-arrow-down"></i></a>
     </section>
 
     <section class="hidden about" id="about">
@@ -83,22 +83,16 @@
             <div class="logos">
                 <div class="hidden">
                     <div class="sobre">
-                        <h3>coisas</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam optio eaque est, ea libero
-                            quas fuga
-                            amet voluptas eum impedit necessitatibus, quo facere ducimus rerum voluptatum harum hic
-                            dignissimos
-                            assumenda!</p>
+                        <h3>Sobre</h3>
+                        <p>Sou uma desenvovedora full-stack, comecei minha jornada com programação no Ensino médio, no qual cursei Informática em uma escola técnica, 
+                            o que me fez ficar apaixonada pela área, especialmente pelo desenvolvimento web.</p>
                     </div>
                 </div>
                 <div class="hidden">
                     <div class="experiencia">
                         <h3>Experiência</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat repudiandae architecto
-                            atque,
-                            sequi, dolorum incidunt quae unde enim tempora eius delectus et nam culpa ad maiores
-                            temporibus
-                            deserunt commodi! Nam.</p>
+                        <p>Além de toda minha jornada na ensino médio tecnico, fui designada para um estágio, ao final do curso, 100% voltado para programação web, no qual usei 
+                            tecnologias como react js, next js e js. Atualmente estou cursando Sistemas de Informação na UFC.</p>
                     </div>
                 </div>
             </div>
@@ -111,27 +105,27 @@
             <div class="habs">
                 <i class="fa-brands fa-js"></i>
                 <h2>JavaScript</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                <p>2 anos de experiência, com 5 projetos desenvolvidos.</p>
             </div>
             <div class="habs">
                 <i class="fa-brands fa-react"></i>
                 <h2>React JS</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                <p>6 meses de experiência, com 3 projetos desenvolvidos.</p>
             </div>
             <div class="habs">
                 <i class="fa-brands fa-html5"></i>
                 <h2>Html</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                <p>3 anos de experiência, com mais de 25 projetos desenvolvidos.</p>
             </div>
             <div class="habs">
                 <i class="fa-brands fa-css3-alt"></i>
                 <h2>CSS</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                <p>3 anos de experiência, com mais de 25 projetos desenvolvidos. </p>
             </div>
             <div class="habs">
                 <i class="fa-brands fa-php"></i>
                 <h2>Php</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                <p>1 ano e meio de experiência, com 4 projetos desenvolvidos. </p>
             </div>
         </div>
     </section>
@@ -153,7 +147,7 @@
                     <i class="fa-brands fa-css3-alt"></i>
                     <i class="fa-brands fa-html5"></i>
                 </div>
-                <button class="read-more">Read More</button>
+                <a href="<?= $projeto['link']?>"><button class="read-more">Acessar</button></a>
             </div>
         </div>
         <?php endforeach; ?>

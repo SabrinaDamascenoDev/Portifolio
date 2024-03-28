@@ -129,11 +129,16 @@ section{
 
 .card .read-more{
     background: linear-gradient(90deg, #732b70, #984e94);
-    padding: 12px;
+    padding: 14px;
     color: white;
     border-radius: 20px;
     border: transparent;
     transition: 0.4s;
+    width: 20em;
+}
+
+.card a{
+    width: 20em;
 }
 
 .read-more:hover{
